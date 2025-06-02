@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+
+<html lang="en">
+  <!-- Início do documento HTML, com idioma definido como inglês -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres como UTF-8 (suporta acentuação, etc.) -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Garante compatibilidade com versões antigas do Internet Explorer -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Define o comportamento da página em dispositivos móveis para ser responsivo -->
+
+    <title>Document</title>
+    <!-- Título da aba do navegador -->
+  </head>
+
+  <body>
+    <!-- Corpo do documento -->
+
+    <h1>Testes com API</h1>
+    <!-- Título principal da página -->
+
+    <p>
+      <!-- Parágrafo que agrupa os botões de interação com a API -->
+
+      <input type="button" value="Consultar" onclick="consultar()" />
+      <!-- Botão que chama a função consultar() ao ser clicado -->
+
+      <input
+        type="button"
+        value="Consultar por Codigo"
+        onclick="consultarPorCodigo(1)"
+      />
+      <!-- Botão que chama a função consultarPorCodigo() com o parâmetro 1 -->
+
+      <input type="button" value="Cadastrar" onclick="cadastrar()" />
+      <!-- Botão que chama a função cadastrar() -->
+
+      <input type="button" value="Alterar" onclick="alterar(1)" />
+      <!-- Botão que chama a função alterar() com o parâmetro 1 -->
+
+      <input type="button" value="Excluir" onclick="excluir(1)" />
+      <!-- Botão que chama a função excluir() com o parâmetro 1 -->
+    </p>
+
+    <p id="resultado">
+      <!-- Parágrafo vazio com ID "resultado", provavelmente para mostrar o retorno das funções -->
+    </p>
+
+    <script src="testes.js"></script>
+    <!-- Importa o arquivo de script externo que deve conter as funções usadas nos botões -->
+  </body>
+</html>

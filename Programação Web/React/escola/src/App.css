@@ -1,0 +1,77 @@
+/* Remove margens e preenchimento padrão do body e define o modelo de caixa */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estiliza o menu principal */
+.menu {
+  background-color: rgb(96, 0, 0);         /* Cor de fundo vermelho escuro */
+  display: flex;                           /* Flexbox para alinhar os itens em linha */
+  align-items: center;                     /* Centraliza verticalmente os itens */
+  justify-content: space-between;          /* Espaça os itens com espaço entre eles */
+  color: white;                            /* Cor do texto branca */
+  padding: 0 20px;                         /* Espaçamento horizontal */
+}
+
+/* Estiliza os links dentro do menu */
+.menu a {
+  color: white;                            /* Cor do texto branca */
+  font-size: 20px;                         /* Tamanho da fonte */
+  text-decoration: none;                   /* Remove sublinhado */
+  margin-left: 5px;                        /* Espaço à esquerda entre os links */
+}
+
+/* Hover nos links do menu (obs: está com erro de seletor, veja abaixo) */
+.menu a:hover {
+  color: yellow;                           /* Muda a cor para amarelo ao passar o mouse */
+}
+
+/* Corrigir: o seletor correto é `.menu a:hover` */
+
+/* Estiliza a div de conteúdo */
+.conteudo {
+  padding: 20px;                           /* Espaçamento interno */
+}
+
+/* Estiliza todos os links da página */
+a {
+  color: blue;                             /* Cor azul (pode ser sobrescrito por seletores mais específicos) */
+}
+
+/* Estiliza o formulário */
+form {
+  width: 600px;                            /* Largura fixa */
+  margin: 10px auto;                       /* Centralizado na horizontal com margem em cima/baixo */
+  padding: 10px;                           /* Espaçamento interno */
+  border: 1px solid #960000;               /* Borda vermelha escura */
+  border-radius: 5px;                      /* Cantos arredondados */
+  font-size: 20px;                         /* Tamanho da fonte */
+}
+
+/* Estiliza os inputs de texto do formulário */
+form input[type="text"] {
+  width: 100%;                             /* Ocupa toda a largura do contêiner pai */
+  box-sizing: border-box;                  /* Inclui padding e borda no cálculo da largura */
+  padding: 10px;                           /* Espaçamento interno */
+  font-size: 20px;                         /* Tamanho da fonte */
+}
+
+/* Estiliza o botão do formulário */
+form input[type="button"] {
+  border: none;                            /* Sem borda */
+  padding: 10px;                           /* Espaçamento interno */
+  background-color: #960000;               /* Cor de fundo vermelha escura */
+  color: white;                            /* Cor do texto branca */
+  font-size: 20px;                         /* Tamanho da fonte */
+  border-radius: 5px;                      /* Cantos arredondados */
+}
+
+/* Estiliza as células da tabela dentro do formulário */
+form table th,
+td {
+  border: 1px solid #960000;               /* Borda vermelha escura */
+  border-collapse: collapse;               /* Mescla as bordas da tabela */
+  padding: 5px;                            /* Espaçamento interno */
+}
